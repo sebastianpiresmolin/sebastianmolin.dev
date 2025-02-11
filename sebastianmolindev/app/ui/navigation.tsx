@@ -20,15 +20,15 @@ export default function Navigation() {
         <div className="flex flex-row gap-6 ">
           <Link
             className="text-2xl border-2 border-emerald-300 border-dashed pl-2 pr-2 hover:scale-95"
-            href="/personnel/sebastian/portfolio"
+            href="/personnel/sebastian"
           >
-            Portfolio
+            Start
           </Link>
           <Link
             className="text-2xl border-2 border-emerald-300 border-dashed pl-2 pr-2 hover:scale-95"
-            href="/personnel/sebastian/about"
+            href="/personnel/sebastian/portfolio"
           >
-            About
+            Portfolio
           </Link>
           <Link
             className="text-2xl border-2 border-emerald-300 border-dashed pl-2 pr-2 hover:scale-95"
