@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black min-h-screen min-w-screen max-h-screen max-w-screen">
+      <body className=" justify-center bg-black min-h-screen min-w-screen max-h-screen max-w-screen">
         {/* Fixad bakgrund för hela layouten */}
         <div className="fixed top-0 left-0 w-full h-full z-0">
           <Image
