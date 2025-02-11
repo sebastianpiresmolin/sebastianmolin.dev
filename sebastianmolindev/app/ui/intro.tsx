@@ -17,7 +17,7 @@ export default function Intro() {
     if (isInitializing) {
       const timer = setTimeout(() => {
         setShowImage(true); // Visa bilden efter 3 sekunder
-      }, 3000);
+      }, 4000);
 
       return () => clearTimeout(timer); // Rensa timeout vid ändringar
     } else {
@@ -60,13 +60,12 @@ export default function Intro() {
           {/* Visa "INITIALIZING" */}
           {isInitializing && !showImage && (
             <motion.div
-              className="text-4xl text-emerald-300 m-0 w-1/2"
+              className="text-4xl text-emerald-300 m-0 w-fit typing-effect"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             >
               INITIALIZING
-              <span className="loading-dots absolute"></span>
             </motion.div>
           )}
 

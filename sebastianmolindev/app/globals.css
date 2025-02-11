@@ -33,30 +33,78 @@ body {
 
 .loading-dots {
   display: inline-block;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: theme('colors.emerald.300');
+  margin-left: 5px;
+  position: relative;
+  animation: dots 1s linear infinite;
 }
 
-.loading-dots::after {
-  content: "";
-  animation: dot-animation 1.6s steps(4, end) infinite;
+/* Dölj laddningspunkter under skrivanimationen */
+.dots-hidden {
+  visibility: hidden; /* Dölj tills "typing" är klar */
+  animation: show-dots 0s linear 2s forwards; /* Vänta till "typing" är klar (2s) och visa punkterna */
 }
 
-@keyframes dot-animation {
+/* Nyckelbild för att visa punkterna */
+@keyframes show-dots {
+  to {
+    visibility: visible;
+  }
+}
+
+/* Animation för laddningspunkterna */
+@keyframes dots {
   0% {
     content: "";
   }
-  25% {
+  33% {
     content: ".";
   }
-  50% {
+  66% {
     content: "..";
   }
-  75% {
+  100% {
     content: "...";
   }
-  100% {
-    content: "";
+}
+
+.typing-effect {
+  display: inline-block;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative; /* Behövs för :after-positionering */
+
+  /* Animera skrivning */
+  width: 0; /* Börjar med ingen bredd */
+  animation: typing 2s steps(12, end) forwards; /* Typing-animation för 12 tecken */
+}
+
+.typing-effect::after {
+  content: ""; /* Skapar markören */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 2px; /* Markörens bredd */
+  background-color: #34d399; /* Markörens färg */
+
+  /* Blinkande markör */
+  animation: blink 0.5s step-end infinite; /* Blinkande effekt */
+}
+
+/* Typing-animationen: En teckenskrivning i steg */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12ch; /* Längden av texten "INITIALIZING" */
+  }
+}
+
+/* Blinkning av markör */
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
 }
