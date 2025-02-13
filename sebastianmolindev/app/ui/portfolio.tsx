@@ -81,8 +81,10 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="flex flex-col justify-center items-center max-w-[45%] h-fit">
-                                    <h1  className="min-w-[100%] text-xl bg-black text-center border-2 border-b-0 border-emerald-300 border-dashed">Preview of the SpecGurka tool</h1>
-                                    <img src="/specgurka.png" alt="Preview of the SpecGurka tool" className="border-2 border-emerald-300 border-dashed"/>
+                                    <h1 className="min-w-[100%] text-xl bg-black text-center border-2 border-b-0 border-emerald-300 border-dashed">Preview
+                                        of the SpecGurka tool</h1>
+                                    <img src="/specgurka.png" alt="Preview of the SpecGurka tool"
+                                         className="border-2 border-emerald-300 border-dashed"/>
                                 </div>
                             </div>
 
@@ -141,9 +143,11 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="flex flex-col justify-center items-center max-w-[45%] h-fit">
-                                    <a target="_blank" href="https://heroes-of-hearthglow.vercel.app/" className="min-w-[100%] text-xl bg-black text-center border-2 border-b-0 border-emerald-300 border-dashed">https://heroes-of-hearthglow.vercel.app/</a>
-                                    <a target="_blank" href="https://heroes-of-hearthglow.vercel.app/"><img src="/HeroesOfHearthglow.png" alt="Heroes of Hearthglow"
-                                            className="border-2 border-emerald-300 border-dashed"/></a>
+                                    <a target="_blank" href="https://heroes-of-hearthglow.vercel.app/"
+                                       className="min-w-[100%] text-xl bg-black text-center border-2 border-b-0 border-emerald-300 border-dashed">https://heroes-of-hearthglow.vercel.app/</a>
+                                    <a target="_blank" href="https://heroes-of-hearthglow.vercel.app/"><img
+                                        src="/HeroesOfHearthglow.png" alt="Heroes of Hearthglow"
+                                        className="border-2 border-emerald-300 border-dashed"/></a>
 
                                 </div>
                             </div>
@@ -151,7 +155,6 @@ export default function Portfolio() {
                         </div>
 
                     </div>
-
 
 
                     <div className="flex flex-col">
@@ -193,8 +196,10 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="flex flex-col justify-center items-center max-w-[45%] h-fit">
-                                    <h1  className="min-w-[100%] text-xl bg-black text-center border-2 border-b-0 border-emerald-300 border-dashed">Spring Boot REST-API</h1>
-                                    <img src="/springApi.png" alt="Spring Boot REST-API" className="border-2 border-emerald-300 border-dashed"/>
+                                    <h1 className="min-w-[100%] text-xl bg-black text-center border-2 border-b-0 border-emerald-300 border-dashed">Spring
+                                        Boot REST-API</h1>
+                                    <img src="/springApi.png" alt="Spring Boot REST-API"
+                                         className="border-2 border-emerald-300 border-dashed"/>
                                 </div>
                             </div>
 
