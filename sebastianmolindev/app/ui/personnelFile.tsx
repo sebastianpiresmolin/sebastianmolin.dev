@@ -28,7 +28,7 @@ export default function PersonnelFile() {
           <div className="flex flex-col p-5">
             <h2 className="text-3xl">
               Occupation:{" "}
-              <span className="text-emerald-100">Fullstack Web Developer</span>
+              <span className="text-emerald-100">Fullstack Web Developer (Backend biased)</span>
             </h2>
             <h2 className="text-3xl pt-2">
               Current Assignment:{" "}
