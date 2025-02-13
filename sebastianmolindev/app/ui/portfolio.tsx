@@ -47,7 +47,7 @@ export default function Portfolio() {
                                         <h2 className="text-3xl pb-2">
                                             Description:
                                             <span className="text-emerald-100 ">
-                                               SpecGurka is a collection of tools for working with the test result of an automated
+                                               {" "}SpecGurka is a collection of tools for working with the test result of an automated
                                                 BDD process, based on gherkin-feature files and a test automation tool
                                                 (like reqnroll). During my internship at Winlas AB, I worked on the
                                                 development of the SpecGurka tool.
