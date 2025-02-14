@@ -22,7 +22,7 @@ export default function PersonnelFile() {
               <h1 className="text-emerald-300 pl-5 text-3xl">
                 Download Resume PDF:{" "}
                 <a
-                  href="./SebastianMolinResume.pdf"
+                  href="/SebastianMolinResume.pdf"
                   download="SebastianMolinResume.pdf"
                   className="text-emerald-100 decoration-dashed underline"
                 >

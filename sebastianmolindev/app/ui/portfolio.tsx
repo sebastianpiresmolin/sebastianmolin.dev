@@ -26,6 +26,16 @@ export default function Portfolio() {
                   Link
                 </a>
               </span>
+              <h1 className="text-emerald-300">
+                Download Resume PDF:{" "}
+                <a
+                  href="/SebastianMolinResume.pdf"
+                  download="SebastianMolinResume.pdf"
+                  className="text-emerald-100 decoration-dashed underline"
+                >
+                  Download
+                </a>
+              </h1>
             </h1>
             <div className="text-2xl m-0 border-2 border-emerald-300 border-dashed pl-2 pr-2 mt-5 mr-5">
               <h2 className="pt-1">UserId: 5763C31XE8A</h2>
@@ -67,6 +77,17 @@ export default function Portfolio() {
             githubLink="https://github.com/sebastianpiresmolin/spring-rest-api"
             previewTitle="Spring Boot REST-API"
             previewImage="/springApi.png"
+          />
+
+          {/* Spring Boot REST-API Project */}
+          <ProjectSection
+            name="Implement ElastiSearch in a Spring Boot REST-API"
+            type="School Group Project"
+            description="This pull request introduces several new features and improvements related to file management and search capabilities, including the integration of Hibernate Search with Lucene for full-text search functionality. The most important changes include adding new dependencies, creating new classes and interfaces for file operations, and updating configuration files."
+            technologies={["Java", "Spring Boot", "SQL"]} // Lägg till SQL här
+            githubLink="https://github.com/fungover/system2024/pull/42"
+            previewTitle="Main PullRequest for My Implementation of ElastiSearch"
+            previewImage="/ElastiSearch.png"
           />
         </div>
       </section>
