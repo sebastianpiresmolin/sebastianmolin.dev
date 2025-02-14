@@ -14,10 +14,22 @@ export default function PersonnelFile() {
       <section className="text-emerald-300 h-[90vh] flex flex-col items-center grow">
         <div className="w-1/2 flex-col items-center border-2 border-emerald-300 border-dashed mt-40">
           <div className="flex items-top justify-between">
-            <h1 className="text-emerald-300 p-5 text-4xl">
-              Personnel File:{" "}
-              <span className="text-emerald-100">Sebastian Molin</span>
-            </h1>
+            <div className="flex-col">
+              <h1 className="text-emerald-300 p-5 text-4xl">
+                Personnel File:{" "}
+                <span className="text-emerald-100">Sebastian Molin</span>
+              </h1>
+              <h1 className="text-emerald-300 pl-5 text-3xl">
+                Download Resume PDF:{" "}
+                <a
+                  href="./SebastianMolinResume.pdf"
+                  download="SebastianMolinResume.pdf"
+                  className="text-emerald-100 decoration-dashed underline"
+                >
+                  Download
+                </a>
+              </h1>
+            </div>
             <div className="text-2xl m-0 border-2 border-emerald-300 border-dashed pl-2 pr-2 mt-5 mr-5">
               <h2 className="pt-1">UserId: 5763C31XE8A</h2>
               <h2 className="">Clearance: ?? </h2>
@@ -28,7 +40,9 @@ export default function PersonnelFile() {
           <div className="flex flex-col p-5">
             <h2 className="text-3xl">
               Occupation:{" "}
-              <span className="text-emerald-100">Fullstack Web Developer (Backend biased)</span>
+              <span className="text-emerald-100">
+                Fullstack Web Developer (Backend biased)
+              </span>
             </h2>
             <h2 className="text-3xl pt-2">
               Current Assignment:{" "}
@@ -65,7 +79,9 @@ export default function PersonnelFile() {
             </h2>
             <h2 className="text-3xl pt-2">
               Portfolio:{" -> "}
-              <span className="text-emerald-100 decoration-dashed underline"><a href="/personnel/sebastian/portfolio">Continue</a></span>
+              <span className="text-emerald-100 decoration-dashed underline">
+                <a href="/personnel/sebastian/portfolio">Continue</a>
+              </span>
             </h2>
           </div>
         </div>
