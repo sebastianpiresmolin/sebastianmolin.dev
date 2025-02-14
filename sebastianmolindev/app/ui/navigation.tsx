@@ -34,16 +34,6 @@ export default function Navigation() {
         </Link>
         <Link
           className={`text-2xl border-2 border-emerald-300 border-dashed pl-2 pr-2 hover:scale-95 ${
-            isActive("/personnel/sebastian/contact")
-              ? "bg-emerald-400 text-black"
-              : ""
-          }`}
-          href="/personnel/sebastian/contact"
-        >
-          Contact
-        </Link>
-        <Link
-          className={`text-2xl border-2 border-emerald-300 border-dashed pl-2 pr-2 hover:scale-95 ${
             isActive("/personnel/sebastian/nostromo")
               ? "bg-emerald-400 text-black"
               : ""

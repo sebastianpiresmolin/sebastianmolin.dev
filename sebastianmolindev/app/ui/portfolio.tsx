@@ -26,16 +26,18 @@ export default function Portfolio() {
                   Link
                 </a>
               </span>
-              <h1 className="text-emerald-300">
-                Download Resume PDF:{" "}
-                <a
-                  href="/SebastianMolinResume.pdf"
-                  download="SebastianMolinResume.pdf"
-                  className="text-emerald-100 decoration-dashed underline"
-                >
-                  Download
-                </a>
-              </h1>
+              <div>
+                <h1 className="text-emerald-300">
+                  Download Resume PDF:{" "}
+                  <a
+                    href="/SebastianMolinResume.pdf"
+                    download="SebastianMolinResume.pdf"
+                    className="text-emerald-100 decoration-dashed underline"
+                  >
+                    Download
+                  </a>
+                </h1>
+              </div>
             </h1>
             <div className="text-2xl m-0 border-2 border-emerald-300 border-dashed pl-2 pr-2 mt-5 mr-5">
               <h2 className="pt-1">UserId: 5763C31XE8A</h2>

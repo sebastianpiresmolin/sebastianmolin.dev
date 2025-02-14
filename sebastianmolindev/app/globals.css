@@ -108,3 +108,156 @@ body {
     opacity: 0;
   }
 }
+
+.glitch {
+  position: relative;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+  letter-spacing: 5px;
+  z-index: 1;
+  animation: shift 1s ease-in-out infinite alternate;
+}
+
+.glitch:before,
+.glitch:after {
+  display: block;
+  content: attr(data-glitch);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch:before {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  color: #8b00ff;
+  z-index: -1;
+}
+
+.glitch:after {
+  animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  color: #00e571;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-3px, 3px);
+  }
+
+  40% {
+    transform: translate(-3px, -3px);
+  }
+
+  60% {
+    transform: translate(3px, 3px);
+  }
+
+  80% {
+    transform: translate(3px, -3px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes shift {
+  0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+    transform: skewX(0deg);
+  }
+
+  41% {
+    transform: skewX(10deg);
+  }
+
+  42% {
+    transform: skewX(-10deg);
+  }
+
+  59% {
+    transform: skewX(40deg) skewY(10deg);
+  }
+
+  60% {
+    transform: skewX(-40deg) skewY(-10deg);
+  }
+
+  63% {
+    transform: skewX(10deg) skewY(-5deg);
+  }
+
+  70% {
+    transform: skewX(-50deg) skewY(-20deg);
+  }
+
+  71% {
+    transform: skewX(10deg) skewY(-10deg);
+  }
+}
+
+.typing-heading {
+  display: inline-block;
+  font-family: 'FSEX300', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 0; /* Börjar med bredd = 0 */
+  opacity: 0; /* Texten är osynlig från början */
+  animation: typing-heading 4s steps(45, end) 0s forwards, fade-in 0s forwards;
+}
+
+.typing-heading-delayed {
+  display: inline-block;
+  font-family: 'FSEX300', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 0; /* Börjar med bredd = 0 */
+  opacity: 0; /* Texten är osynlig från början */
+  animation: typing-heading-delayed 4s steps(55, end) 4s forwards, fade-in 0s forwards;
+}
+
+/* Skrivmaskinseffekten */
+@keyframes typing-heading {
+  from {
+    width: 0; /* Från bredd 0 – ingenting synligt */
+    opacity: 1; /* Text blir synlig när bredd ökar */
+  }
+  to {
+    width: 100%; /* Texten visas helt när bredd når 100% */
+    opacity: 1; /* Förblir synlig */
+  }
+}
+
+@keyframes typing-heading-delayed {
+  from {
+    width: 0; /* Från bredd 0 – ingenting synligt */
+    opacity: 1; /* Text blir synlig när bredd ökar */
+  }
+  to {
+    width: 100%; /* Texten visas helt när bredd når 100% */
+    opacity: 1; /* Förblir synlig */
+  }
+}
+
+/* Fade-in-effekten för att ta bort osynlighet */
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Startar osynlig */
+  }
+  to {
+    opacity: 1; /* Blir synlig vid start */
+  }
+}
+
+
+
+
+

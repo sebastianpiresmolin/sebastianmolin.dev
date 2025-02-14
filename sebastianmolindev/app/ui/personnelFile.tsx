@@ -51,8 +51,9 @@ export default function PersonnelFile() {
             <h2 className="text-3xl pt-2">
               Resume: <span className="text-emerald-100">See </span>
               <a
-                href="/personnel/sebastian/about"
-                className="decoration-dashed underline"
+                href="/SebastianMolinResume.pdf"
+                download="SebastianMolinResume.pdf"
+                className="text-emerald-300 decoration-dashed underline"
               >
                 here
               </a>
@@ -60,18 +61,6 @@ export default function PersonnelFile() {
                 {" "}
                 for a full list of skills and experiences.
               </span>
-            </h2>
-            <h2 className="text-3xl pt-2">
-              Contact:{" "}
-              <span className="text-emerald-100">
-                To contact Sebastian, please click{" "}
-              </span>
-              <a
-                href="/personnel/sebastian/about"
-                className="decoration-dashed underline text-emerald-300"
-              >
-                here
-              </a>{" "}
             </h2>
             <h2 className="text-3xl pt-2">
               Last Known Location:{" "}
