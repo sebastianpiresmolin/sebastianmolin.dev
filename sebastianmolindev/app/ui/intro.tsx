@@ -48,12 +48,31 @@ export default function Intro() {
       >
         <div className="relative flex flex-col justify-center items-center min-h-screen text-center z-10">
           {!isInitializing && (
-            <motion.div
-              className="text-4xl text-emerald-300 border-2 border-emerald-300 m-0 p-4 cursor-pointer hover:scale-95"
-              onClick={handleClick}
-              whileHover={{ scale: 0.95 }}
-            >
-              PRESS TO INITIALIZE
+            <motion.div className="text-center text-emerald-300 m-0 p-4">
+              <div
+                className="text-4xl border-2 border-emerald-300 p-4 cursor-pointer hover:scale-95"
+                onClick={handleClick}
+              >
+                PRESS TO INITIALIZE
+              </div>
+              <p className="mt-4 text-lg text-emerald-300 hidden lg:block">
+                Use{" "}
+                <span
+                  className="text-emerald-100 underline cursor-pointer"
+                  onClick={() => {
+                    if (document.documentElement.requestFullscreen) {
+                      document.documentElement.requestFullscreen();
+                    } else {
+                      console.warn(
+                        "Fullscreen API stöds inte i denna webbläsare.",
+                      );
+                    }
+                  }}
+                >
+                  fullscreen
+                </span>{" "}
+                for the best experience.
+              </p>
             </motion.div>
           )}
 
@@ -77,9 +96,15 @@ export default function Intro() {
               transition={{ duration: 0.7, ease: "easeInOut" }}
             >
               <Image
-                className="fit"
+                className="fit hidden lg:block"
                 fill={true}
                 src={"/TerminalSplash.png"}
+                alt={"NOSTROMOLINK"}
+              />
+              <Image
+                className="fit block lg:hidden"
+                fill={true}
+                src={"/TerminalSplashMobile.png"}
                 alt={"NOSTROMOLINK"}
               />
             </motion.div>

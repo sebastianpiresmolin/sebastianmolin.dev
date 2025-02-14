@@ -257,6 +257,36 @@ body {
   }
 }
 
+/* Scroll-bar för hela container */
+.custom-scrollbar {
+  scroll-behavior: smooth;
+  scrollbar-width: thin; /* För Firefox */
+  scrollbar-color: #29d499 #1a1a1a; /* För Firefox (thumb och track) */
+}
+
+/* Scrollbar för WebKit (Chrome, Edge och Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; /* För horizontal scroll */
+}
+
+/* Thumb - själva scroll-rutan */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #00ff77;
+  border-radius: 6px;
+  border: 3px solid #1a1a1a; /* Sätter en marginal runt 'thumb' */
+}
+
+/* Track - bakgrunden till scroll-baren */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Track när det är hover */
+.custom-scrollbar::-webkit-scrollbar-track:hover {
+  background: #333333;
+}
+
 
 
 

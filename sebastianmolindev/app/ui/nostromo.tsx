@@ -27,7 +27,7 @@ export default function Nostromo() {
       <section className="text-emerald-300 h-[90vh] flex flex-col items-center grow">
         {/* Första elementet med glitch-effekt */}
         {isFirstVisible && (
-          <div className="w-1/2 text-2xl flex-col items-center border-2 border-emerald-300 border-dashed mt-40 p-5 glitch">
+          <div className="lg:w-1/2 w-full lg:text-2xl text-lg flex-col items-center lg:border-2 border-emerald-300 border-dashed m-5 lg:mt-40 p-5 glitch">
             <h1 className="text-4xl pb-5">USCSS Nostromo</h1>
             <p>
               The United States Cargo Star Ship (USCSS) Nostromo (reg.
@@ -82,13 +82,13 @@ export default function Nostromo() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }} // Fade-in animation för andra elementet
-            className="text-center mt-40"
+            className="text-center mt-5 lg:mt-40"
           >
-            <h1 className="text-5xl p-10 typing-heading">
+            <h1 className="xl:text-5xl lg:text-3xl md:text-2xl text-sm lg:p-10 pt-10 pb-10 typing-heading">
               The Data You Tried To Access Requires A-1 Clearance.
             </h1>
-            <h1 className="text-4xl typing-heading-delayed">
-              This Action Has Been Reported To The Weyland-Yutani Corporation.
+            <h1 className="xl:text-4xl lg:text-2xl md:text-xl text-sm typing-heading-delayed">
+              Weyland-Yutani Corporation Have Been Notified.
             </h1>
           </motion.div>
         )}
