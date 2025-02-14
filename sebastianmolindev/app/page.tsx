@@ -1,7 +1,5 @@
-import Intro from './ui/intro';
+import Intro from "./ui/intro";
 
 export default function Home() {
-  return (
-      <Intro />
-  );
+  return <Intro />;
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -14,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body className=" custom-scrollbar justify-center bg-black min-h-screen min-w-screen max-h-screen max-w-screen">
         {/* Fixad bakgrund för hela layouten */}
         <div className="fixed top-0 left-0 w-full h-full z-0">
