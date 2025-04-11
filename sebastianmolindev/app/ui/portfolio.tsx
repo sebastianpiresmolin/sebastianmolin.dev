@@ -15,6 +15,16 @@ export default function Portfolio() {
       previewImage: "/specgurka.png",
     },
     {
+      name: "Mini MES API",
+      type: "Personal Project",
+      description:
+          "Originally it was just supposed to be a tutorial project to teach myself how to work with MinimalAPI and Handlers. But at this time I was also diving deeper into ISA-95 and more specifically level three - Manufacturing Execution Systems (MES). So the result became a project that was now both a platform to help me hone my API skills, but also shaped as a miniature MES-API. To make the MES-API have some sort of interactivity I let the SwaggerUI act as a small level 4 (Business Layer) by enabling POST/PUT requests.",
+      technologies: ["C#", ".NET", "SQL", "Xunit", "MinimalAPI", "Entity Framework"],
+      githubLink: "https://github.com/sebastianpiresmolin/Mini-MES-API",
+      previewTitle: "Preview of the Mini MES API Swagger UI",
+      previewImage: "/minimesapi.png",
+    },
+    {
       name: "Heroes of Hearthglow",
       type: "Client",
       description:
